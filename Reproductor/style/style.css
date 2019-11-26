@@ -1,0 +1,73 @@
+body{
+  background-color: #9C9C9C;
+
+}
+
+.container{
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 50px 200px;
+  grid-template: "reproductor videos"
+                 "controles videos"
+                 "nada videos";
+}
+
+.principal{
+  display: grid;
+  grid-area: reproductor;
+  align-content: center;
+  justify-content: center;
+  margin-right: 5%;
+  margin-top: 41%;
+
+}
+
+.controles{
+  display: grid;
+  grid-area: controles;
+  grid-template-columns: repeat(7,70px);
+  grid-template-rows: 50px;
+  align-content: center;
+  justify-content: center;
+  grid-gap: 50px;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+
+.videos{
+  display: grid;
+  grid-area: videos;
+  grid-gap: 20px;
+}
+
+
+#mute{
+  content: url("../media/mute.png");
+}
+
+#play{
+  content: url("../media/jugar.png");
+}
+
+#volumenM{
+  content: url("../media/volumenM.png");
+}
+
+#volumenm{
+  content: url("../media/volumenme.png");
+}
+
+#reiniciar{
+  content: url("../media/espalda.png");
+}
+
+#rebobinar{
+  content: url("../media/rebobinar.png");
+}
+
+#adelantar{
+  content: url("../media/adelante.png");
+}

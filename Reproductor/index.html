@@ -3,8 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>REPRODUCTOR</title>
+    <style >
+        @import url('style/style.css');
+    </style>
   </head>
   <body>
+      <div class="container">
+          <div class="principal">
 
+            <video id="video1" type="audio/mpeg" src="media/Tusa.mp4" autoplay ></video>
+
+          </div>
+
+          <div class="controles">
+              <button type="button" id="mute" onclick=""></button>
+              <button type="button" id="play" onclick=""></button>
+              <button type="button" id="volumenM" onclick=""></button>
+              <button type="button" id="volumenm" onclick=""></button>
+              <button type="button" id="reiniciar" onclick=""></button>
+              <button type="button" id="rebobinar" onclick=""></button>
+              <button type="button" id="adelantar" onclick=""></button>
+          </div>
+
+          <div class="videos">
+              <video id="video2" type="audio/mpeg" src="media/Tusa.mp4" ></video>
+              <video id="video3" type="audio/mpeg" src="media/Tusa.mp4" ></video>
+              <video id="video4" type="audio/mpeg" src="media/Tusa.mp4" ></video>
+
+          </div>
+
+      </div>
+      <script src="script/script.js"></script>
   </body>
 </html>
