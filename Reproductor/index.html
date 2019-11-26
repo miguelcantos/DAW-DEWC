@@ -10,13 +10,22 @@
   <body>
       <div id="container">
           <div id="principal">
-            <video controls id="video1" type="audio/mpeg" src="media/Tusa.mp4" ></video>
+            <div id="publicidad" class="publicidad">
+                VIRUS, ESPERA 10 SEGUNDOS
+              <button type="button" id="X" onclick="cerrarPublicidad()">X</button>
+              
+              
+            </div>
+            <video  id="video1" type="audio/mpeg" src="media/Tusa.mp4" ></video>
+
+            <div id="Progress">
+              <div id="myBar"></div>
+            </div>
 
           </div>
-
           <div id="controles">
               <button type="button" id="mute" onclick="mute()"></button>
-              <button type="button" id="play" onclick="play()"></button>
+              <button type="button" id="play" class="play" onclick="play()"></button>
               <button type="button" id="volumenM" onclick="volumenM()"></button>
               <button type="button" id="volumenm" onclick="volumenm()"></button>
               <button type="button" id="reiniciar" onclick="reiniciar()"></button>

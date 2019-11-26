@@ -1,25 +1,41 @@
 var video;
-
+var i = 0;
+var T=0;
+var por;
+var dur;
+var act;
+mybar=document.getElementById("myBar");
 function init(){
     video = document.getElementById("video1");
     document.getElementById("video2").addEventListener("click",cambiar);
     document.getElementById("video3").addEventListener("click",cambiar);
     document.getElementById("video4").addEventListener("click",cambiar);
+    setInterval(tiempo,1000);
+    
+
+
 }
 
 function cambiar(){
     var aux = this.src;
     this.src = video.src;
     video.src = aux;
-    document.getElementById("pause").id="play";
+    mostrarPublicidad();
+    if(video.paused){
+        document.getElementById("play").classList.replace("pause","play");
+    }
+    
 }
+
 function play(){
    if(video.paused){
     video.play();
-    document.getElementById("play").id="pause";
+    setInterval(move,10);
+
+    document.getElementById("play").classList.replace("play","pause");
    }else{
     video.pause();
-    document.getElementById("pause").id="play";
+    document.getElementById("play").classList.replace("pause", "play");
    }
 
 }
@@ -62,4 +78,34 @@ function adelantar(){
     video.currentTime+=10;
 }
 
+function cerrarPublicidad(){
+    if(T > 9){
+        document.getElementById("publicidad").classList.replace("publicidad","ocultar");
+        document.getElementById("controles").style.visibility ="visible";
+    }
+
+}
+function tiempo(){
+    T++;
+}
+
+function move() {
+    dur=video.duration;
+    act=video.currentTime;
+    por= (act*100)/dur;
+    
+
+    mybar.style.width = por + "%";
+      
+    
+  
+}
+
+function mostrarPublicidad(){
+    
+    document.getElementById("publicidad").classList.replace("ocultar","publicidad");
+    T=0;
+    document.getElementById("controles").style.visibility = "hidden";
+
+}
 window.onload=init;
