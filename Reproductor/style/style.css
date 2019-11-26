@@ -1,9 +1,9 @@
 body{
-  background-color: #9C9C9C;
+  background-color: #D3D3D3;
 
 }
 
-.container{
+#container{
   margin-left: 10%;
   margin-top: 5%;
   height: 1000px;
@@ -15,7 +15,7 @@ body{
                  "nada videos";
 }
 
-.principal{
+#principal{
   display: grid;
   grid-area: reproductor;
   align-content: center;
@@ -25,7 +25,7 @@ body{
 
 }
 
-.controles{
+#controles{
   display: grid;
   grid-area: controles;
   grid-template-columns: repeat(7,70px);
@@ -37,37 +37,55 @@ body{
   margin-top: 1%;
 }
 
-.videos{
+#videos{
   display: grid;
   grid-area: videos;
   grid-gap: 20px;
 }
 
-
-#mute{
-  content: url("../media/mute.png");
+button{
+  border: none;
+  background-repeat: no-repeat;
+  background-color: #D3D3D3 ;
 }
 
+#mute{
+  background-image: url("../media/mute.png");
+  background-size: contain;
+
+}
+#pause{
+  background-image: url("../media/pausa.png");
+  background-size: contain;
+}
+
+
 #play{
-  content: url("../media/jugar.png");
+  background-image: url("../media/jugar.png");
+  background-size: contain;
 }
 
 #volumenM{
-  content: url("../media/volumenM.png");
+  background-image: url("../media/volumenM.png");
+  background-size: contain;
 }
 
 #volumenm{
-  content: url("../media/volumenme.png");
+  background-image: url("../media/volumenme.png");
+  background-size: contain;
 }
 
 #reiniciar{
-  content: url("../media/espalda.png");
+  background-image: url("../media/espalda.png");
+  background-size: contain;
 }
 
 #rebobinar{
-  content: url("../media/rebobinar.png");
+  background-image: url("../media/rebobinar.png");
+  background-size: contain;
 }
 
 #adelantar{
-  content: url("../media/adelante.png");
+  background-image: url("../media/adelante.png");
+  background-size: contain;
 }

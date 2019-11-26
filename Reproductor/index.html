@@ -8,27 +8,27 @@
     </style>
   </head>
   <body>
-      <div class="container">
-          <div class="principal">
-
-            <video id="video1" type="audio/mpeg" src="media/Tusa.mp4" autoplay ></video>
+      <div id="container">
+          <div id="principal">
+            <video controls id="video1" type="audio/mpeg" src="media/Tusa.mp4" ></video>
 
           </div>
 
-          <div class="controles">
-              <button type="button" id="mute" onclick=""></button>
-              <button type="button" id="play" onclick=""></button>
-              <button type="button" id="volumenM" onclick=""></button>
-              <button type="button" id="volumenm" onclick=""></button>
-              <button type="button" id="reiniciar" onclick=""></button>
-              <button type="button" id="rebobinar" onclick=""></button>
-              <button type="button" id="adelantar" onclick=""></button>
+          <div id="controles">
+              <button type="button" id="mute" onclick="mute()"></button>
+              <button type="button" id="play" onclick="play()"></button>
+              <button type="button" id="volumenM" onclick="volumenM()"></button>
+              <button type="button" id="volumenm" onclick="volumenm()"></button>
+              <button type="button" id="reiniciar" onclick="reiniciar()"></button>
+              <button type="button" id="rebobinar" onclick="rebobinar()"></button>
+              <button type="button" id="adelantar" onclick="adelantar()"></button>
+
           </div>
 
-          <div class="videos">
-              <video id="video2" type="audio/mpeg" src="media/Tusa.mp4" ></video>
-              <video id="video3" type="audio/mpeg" src="media/Tusa.mp4" ></video>
-              <video id="video4" type="audio/mpeg" src="media/Tusa.mp4" ></video>
+          <div id="videos">
+              <video id="video2" type="audio/mpeg" src="media/nicki.mp4" ></video>
+              <video id="video3" type="audio/mpeg" src="media/trueno.mp4" ></video>
+              <video id="video4" type="audio/mpeg" src="media/nicole.mp4" ></video>
 
           </div>
 
