@@ -1,0 +1,51 @@
+#div1{
+    grid-area: jugadores;
+    border:1px solid black;
+    width:100%;
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+#div2{
+    grid-area: equipo1;
+    border:1px solid black;
+    width:70%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+
+}
+
+#div3{
+    grid-area: equipo2;
+    border:1px solid black;
+    width:70%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+
+}
+.jugador{
+    width:98%;
+    height:50px;
+    border:1px solid red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "equipo1 equipo2"
+                        "jugadores jugadores";
+
+}
