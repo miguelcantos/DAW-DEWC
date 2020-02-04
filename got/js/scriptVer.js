@@ -18,6 +18,7 @@ function init() {
 
 function cargar(respuesta) {
     let div1 = document.getElementById("contenedorFichas");
+
     respuesta.got.forEach( element => {
         
         let divIMG = document.createElement("div");
