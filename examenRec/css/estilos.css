@@ -1,0 +1,43 @@
+table {
+    width:500px;
+    margin-left:calc(50% - 250px);
+}
+#main div:first-child {
+    text-align:center;
+}
+tr:first-child {
+    text-align:center;
+    background-color: rgba(48,2,9,0.42);
+    color:white;
+}
+tr td:first-child {
+    font-weight:bold;
+    text-align: right;
+    height:40px;
+    width:200px;
+}
+tr td:nth-child(2) {
+
+}
+#main {
+    width:800px;
+    margin-left:calc(50% - 400px);
+}
+td {
+    padding:5px;
+}
+button {
+    background-color: #660609;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    font-weight:bold;
+    border:1px solid red;
+}
+button:hover {
+    cursor: pointer;
+}
+
+button:disabled{
+    background-color: grey;
+}

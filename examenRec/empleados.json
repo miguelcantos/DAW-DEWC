@@ -1,0 +1,8 @@
+{
+  "empleados": [
+    { "apellido":"Fernando" , "nombre":"Gómez", "idEmpleado":"ID123" },
+    { "apellido":"Alberto" , "nombre":"Ruiz", "idEmpleado":"ID837" },
+    { "apellido":"Susana" , "nombre":"Jiménez", "idEmpleado":"ID912" },
+    { "apellido":"Fernando" , "nombre":"Gómez","idEmpleado":"ID251" }
+  ]
+}

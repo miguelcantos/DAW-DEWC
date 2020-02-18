@@ -1,0 +1,48 @@
+{
+  "responsable":
+  {
+    "Nombre" : "Juan",
+    "Edad": 28,
+    "Aficiones": ["Música", "Cine", "Tenis"],
+    "Residencia": "Madrid"
+  },
+  "empleados":
+  [
+    {
+      "nombre" : "Fernando",
+      "apellido1": "Gómez",
+      "apellido2": "Sacedón",
+      "direccion": "Paseo de la Dolorosa 32",
+      "email": "fernando.gomez@dolor.es",
+      "cargo": "Dirección económica",
+      "idEmpleado":"ID123"
+    },
+    {
+      "nombre" : "Alberto",
+      "apellido1": "Ruiz",
+      "apellido2": "Mascachapas",
+      "direccion": "Plaza de la desesperación, 53",
+      "email": "alberto.ruiz@dolor.es",
+      "cargo": "fontanero",
+      "idEmpleado":"ID837"
+    },
+    {
+      "nombre" : "Susana",
+      "apellido1": "Jiménez",
+      "apellido2": "García",
+      "direccion": "Callejón de las desgracias, 12B",
+      "email": "susana.jimenez@dolor.es",
+      "cargo": "Dirección de circo",
+      "idEmpleado":"ID912"
+    },
+    {
+      "nombre" : "Fernando",
+      "apellido1": "Gómez",
+      "apellido2": "Pacheco",
+      "direccion": "Cuesta de la sangre, 12",
+      "email": "fernando.gomez.pacheco@dolor.es",
+      "cargo": "Tenista",
+      "idEmpleado":"ID251" 
+    }
+  ]
+}
